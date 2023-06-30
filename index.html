@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bài tập</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Bài tập</h1>
+  <div class="container">
+    <div class="input-section">
+      <label for="inputNumber">Nhập dãy số nguyên:</label>
+      <input type="text" id="inputNumber" placeholder="Nhập số nguyên cách nhau bằng dấu cách">
+      <button onclick="startExercises()">BẮT ĐẦU</button>
+    </div>
+
+    <div id="exercises" style="display: none;">
+      <div class="exercise">
+        <h2>Bài 1: Tính tổng số dương</h2>
+        <button onclick="tinhTong()">TÍNH TỔNG</button>
+        <p id="result1"></p>
+      </div>
+
+      <div class="exercise">
+        <h2>Bài 2: Đếm số dương</h2>
+        <button onclick="demSoDuong()">ĐẾM SỐ</button>
+        <p id="result2"></p>
+      </div>
+
+      <div class="exercise">
+        <h2>Bài 3: Tìm số nhỏ nhất</h2>
+        <button onclick="timSoNhoNhat()">TÌM SỐ NHỎ NHẤT</button>
+        <p id="result3"></p>
+      </div>
+
+      <div class="exercise">
+        <h2>Bài 4: Tìm số dương nhỏ nhất</h2>
+        <button onclick="timSoDuongNhoNhat()">SỐ DƯƠNG NHỎ NHẤT</button>
+        <p id="result4"></p>
+      </div>
+
+      <div class="exercise">
+        <h2>Bài 5: Tìm số chẵn cuối cùng</h2>
+        <button onclick="timSoChanCuoiCung()">TÌM SỐ CHẴN</button>
+        <p id="result5"></p>
+      </div>
+
+      <div class="exercise">
+        <h2>Bài 6: Đổi chỗ</h2>
+        <label for="swapIndex1">Vị trí số 1:</label>
+        <input type="text" id="swapIndex1" placeholder="Nhập vào vị trí của số thứ 1">
+        <label for="swapIndex2">Vị trí số 2:</label>
+        <input type="text" id="swapIndex2" placeholder="Nhập vào vị trí của số thứ 2">
+        <button onclick="doiCho()">ĐỔI CHỖ</button>
+        <p id="result6"></p>
+      </div>
+
+      <div class="exercise">
+        <h2>Bài 7: Sắp xếp tăng dần</h2>
+        <button onclick="sapXepTangDan()">SẮP XẾP</button>
+        <p id="result7"></p>
+      </div>
+
+      <div class="exercise">
+        <h2>Bài 8: Tìm số nguyên tố đầu tiên</h2>
+        <button onclick="timSoNguyenToDauTien()">TÌM SỐ NGUYÊN TỐ</button>
+        <p id="result8"></p>
+      </div>
+
+      <div class="exercise">
+        <h2>Bài 9: Đếm số nguyên</h2>
+        <button onclick="demSoNguyen()">ĐẾM SỐ NGUYÊN</button>
+        <p id="result9"></p>
+      </div>
+
+      <div class="exercise">
+        <h2>Bài 10: So sánh số âm và số dương</h2>
+        <button onclick="soSanhSoAmVaSoDuong()">SO SÁNH</button>
+        <p id="result10"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
